@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Tailwindcss and fonts -->
+  <link rel="stylesheet" href="stylesheets/tailwind.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap" rel="stylesheet" />
+  <!-- Custom styling -->
+  <style>
+    body {
+      font-family: "Space Grotesk", sans-serif;
+    }
+
+    #art {
+      width: 500px;
+      height: 450px;
+      align-items: center;
+    }
+
+    #width {
+      width: 500px;
+      height: 460px;
+    }
+
+    .selected {
+      border: 1px solid purple;
+    }
+  </style>
+  <title>Foodies</title>
+</head>
+
+<body>
+  <main>
+    <div class="container mx-auto px-4 md:px-2 ">
+      <div class="grid grid-cols-2">
+        <!-- Image -->
+
+        <div class="m-12 bg-gray-50 w-3/4 h-3/5  shadow-2xl">
+          <h3 class="text-3xl text-green-500 font-extrabold text-center">Ayman Food</h3>
+          <img src="image/img-1.jpg" id="art" class="w-full  h-full pt-6 pl-4 pb-8 pr-4 mx-auto object-cover" alt="" />
+        </div>
+
+        <!-- Options -->
+        <div class="mt-10 max-w-lg mx-auto">
+          <h2 class="text-3xl m-3 text-center text-blue-800 font-bold">About This Food</h2>
+          <span id="desc" class="text-lg text-gray-700 text-blue-700">Lorem ipsum dolor sit amet consectetur adipisicing
+            elit.
+            Dignissimos aut accusamus, ipsam iusto illum error nisi! Deserunt
+            facilis ratione nobis!
+          </span>
+          <p class="mt-8 mb-4 text-2xl text-red-400">Special Food</p>
+          <p class=" mb-4 text-4xl font-bolder text-blue-500">$<span id="price">150</span></p>
+          <div>
+            <button id="free" class="border p-2 m-1 shadow hover:shadow-lg rounded">Free Shipping-5$</button>
+            <button id="express" class="border p-2 m-1 shadow hover:shadow-lg rounded">Express Shipping-30$</button>
+
+          </div>
+          <div class="flex justify-between items-center mt-12">
+            <div class="bg-blue-200 p-5 my-2 border cursor-pointer hover:border-purple-600 hover:shadow-lg rounded selected
+                " id="first">
+              <img src="image/img-2.jpg" class="w-20 h-20" alt="" />
+            </div>
+            <div class="bg-blue-200
+                  p-5
+                  my-2
+                  border
+                  cursor-pointer
+                  hover:border-purple-600
+                  rounded
+                " id="second">
+              <img src="image/img-3.jpg" class="w-20 h-20" alt="" />
+            </div>
+            <div class="bg-blue-200
+                  p-5
+                  my-2
+                  border
+                  cursor-pointer
+                  hover:border-purple-600
+                  rounded
+                " id="third">
+              <img src="image/img-4.jpg" class="w-20 h-20" alt="" />
+            </div>
+
+          </div>
+          <div class="mt-12 ">
+            <p class="font-bold px-4 py-2 mt-2">Shipping Charge: <span id="shipping">0</span>$</p>
+            <p class="font-bold px-4 py-2 mt-2">Total : <span id="total">00</span></p>
+            <button class="font-bold p-3 mb-8  text-pink-600 border shadow hover:shadow-lg rounded alert"
+              onclick="alert('Your request is in progress ')">Buy
+              Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <p class="text-center m-2 text-red-400">&copy <span>Muhibullah Muhsin ;all right reserved</span></p>
+  </footer>
+  <!-- Custom js -->
+  <script src="food.js"></script>
+
+
+
+</body>
+
+</html>
